@@ -1,3 +1,14 @@
+// function play() {
+//   //hide the home screen. to hide the screen add the class hidden to the home section
+//   //show the play ground
+//   const homeSection = document.getElementById("home-screen");
+//   homeSection.classList.add("hidden");
+//   //   console.log(homeSection);
+//   const playgroundSection = document.getElementById("play-ground");
+//   playgroundSection.classList.remove("hidden");
+// }
+
 function play() {
-  console.log("Play start now!");
+  hideElementByid("home-screen");
+  showElementByid("play-ground");
 }
