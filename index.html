@@ -25,13 +25,17 @@
   <body>
     <main class="min-h-screen bg-[#010313]">
       <section
-        class="home text-white flex flex-col justify-center items-center min-h-screen hidden"
+        class="home text-white flex flex-col justify-center items-center min-h-screen"
       >
         <!-- home screens -->
-        <div class="flex flex-col items-center gap-8">
-          <h1 class="text-8xl uppercase">Alpha Clash Pro</h1>
-          <p>Unleash your keyboard kun g fu: Press "Enter" to Play</p>
-          <button class="btn px-8 bg-white text-black">Play Now</button>
+        <div
+          class="flex flex-col items-center gap-8 p-20 rounded-3xl bg-slate-800"
+        >
+          <h1 class="text-6xl uppercase">Alpha Clash Pro</h1>
+          <p>Unleash your keyboard: Press "Play Now" to Play</p>
+          <button onclick="play()" class="btn px-8 bg-white text-black">
+            Play Now
+          </button>
         </div>
       </section>
       <!-- play grounds starts-->
@@ -131,7 +135,19 @@
         </div>
       </section>
       <!-- score screens  -->
-      <section class="score"></section>
+      <section
+        class="score flex justify-center items-center min-h-screen hidden"
+      >
+        <div
+          class="text-white text-center space-y-6 bg-purple-900 p-10 rounded-lg"
+        >
+          <h1 class="text-8xl"><span>Score:</span> <span>14</span></h1>
+          <button class="btn">Play Again</button>
+          <p>Practice makes you pro</p>
+        </div>
+      </section>
     </main>
+
+    <script src="script/alpah.js"></script>
   </body>
 </html>
