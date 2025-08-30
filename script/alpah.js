@@ -8,6 +8,25 @@
 //   playgroundSection.classList.remove("hidden");
 // }
 
+function handleKeyBoardKeyUpEvent(event) {
+  const playerPressed = event.key;
+  console.log("player pressed", playerPressed);
+
+  const currentAlphabetElement = document.getElementById("current-alphabet");
+  console.log(currentAlphabetElement.innerText);
+  const expectedAlphabet = currentAlphabetElement.toLowerCase();
+  console.log(playerPressed, expectedAlphabet);
+
+  //check
+  if (playerPressed === expectedAlphabet) {
+    console.log("you get a point");
+  } else {
+    console.log("you missed you get lost a life");
+  }
+}
+
+document.addEventListener("keyup", handleKeyBoardKeyUpEvent);
+
 function continueGame() {
   // step-1 generate a random alphabet
   const alphabet = getARandomAlphabet();
