@@ -10,16 +10,14 @@
 
 function handleKeyBoardKeyUpEvent(event) {
   const playerPressed = event.key;
-  console.log("player pressed", playerPressed);
-
   const currentAlphabetElement = document.getElementById("current-alphabet");
-  console.log(currentAlphabetElement.innerText);
-  const expectedAlphabet = currentAlphabetElement.toLowerCase();
-  console.log(playerPressed, expectedAlphabet);
+  const currentAlphabet = currentAlphabetElement.innerText;
+  const expectedAlphabet = currentAlphabet.toLowerCase();
 
   //check
   if (playerPressed === expectedAlphabet) {
     console.log("you get a point");
+    continueGame();
   } else {
     console.log("you missed you get lost a life");
   }
